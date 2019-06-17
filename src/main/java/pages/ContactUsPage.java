@@ -50,7 +50,7 @@ public class ContactUsPage {
 
 	@Step("Verify is 'Message has been successfully sent' is Shown")
 	public boolean isMessageHasBeenSentSuccessfullyAlertIsShown() {
-		return alertMessage.text().contains("Message has been successfully sent");
+		return alertMessage.text().contains("Your message has been successfully sent to our team.");
 	}
 
 }

@@ -1,6 +1,9 @@
 package tests;
 
 import static com.codeborne.selenide.Selenide.open;
+
+import java.util.Random;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Optional;
@@ -43,6 +46,12 @@ public class BasicTest {
 	public void setUpBrowser(String browser) {
 		Configuration.browser = browser;
 		Configuration.startMaximized = true;
+	}
+	
+	@Step("Generate Random number")
+	public int generateRandomPart() {
+		Random rand = new Random();
+		return rand.nextInt(1000);
 	}
 
 }

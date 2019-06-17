@@ -14,17 +14,4 @@
 			<class name="tests.UserCanOrderItem" />
 		</classes>
 	</test>
-	<test name="Running test on firefox">
-		<parameter name="browser" value="firefox" />
-		<classes>
-			<class name="tests.UserCanSigninWithValidCredentials" />
-			<class name="tests.ContactUsFormShouldBeSendSuccessfully_Test" />
-			<class
-				name="tests.ErrorMessageShouldAppearsIfMessageAreaIsEmpty" />
-			<class name="tests.TShirtPageIsDisplyed" />
-			<class name="tests.UserCanSearchItems" />
-			<class name="tests.UserCanAddAndDeleteItemsFromCart" />
-			<class name="tests.UserCanOrderItem" />
-		</classes>
-	</test>
 </suite>
